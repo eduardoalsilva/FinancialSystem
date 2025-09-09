@@ -4,7 +4,7 @@ namespace FinancialSystem.Models;
 public abstract class FinancialEntity
 {
     public string? Name { get; set; }
-    public decimal Balance { get; protected set; }
+    public decimal Balance { get; protected set; } 
     public List<Transaction> Transactions { get; } = new List<Transaction>();
 
     protected FinancialEntity(string name)
@@ -13,6 +13,7 @@ public abstract class FinancialEntity
         Balance = 0;
     }
 
+    // Transactions can be positive for deposit or negative for withdrawal
     public void AddTransaction(Transaction transaction)
     {
         Transactions.Add(transaction);

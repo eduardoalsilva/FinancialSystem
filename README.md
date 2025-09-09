@@ -51,6 +51,9 @@ Sistema de fiscalização financeira encerrado
 ```
 
 ## Melhorias futuras
+- Data Transfer Objects
+- Validações inteligentes
+- Services
 - Persistencia de dados
 - Serialização em JSON
 
